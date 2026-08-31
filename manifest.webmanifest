@@ -1,0 +1,20 @@
+{
+  "name": "PUKI-OS Life",
+  "short_name": "PUKI-OS",
+  "display": "standalone",
+  "background_color": "#F4FBF9",
+  "theme_color": "#123F3A",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./puki_os_icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./puki_os_icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
