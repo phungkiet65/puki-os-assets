@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+
+  <title>PUKI-OS Life</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-title" content="PUKI-OS Life">
+  <meta name="application-name" content="PUKI-OS Life">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#123F3A">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./puki_os_icon_180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./puki_os_icon_32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./puki_os_icon_192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./puki_os_icon_512.png">
+
+  <link rel="manifest" href="./manifest.webmanifest">
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #F4FBF9;
+    }
+
+    body {
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    #pukiFrame {
+      width: 100vw;
+      height: 100dvh;
+      border: 0;
+      display: block;
+      background: #F4FBF9;
+    }
+
+    #loading {
+      position: fixed;
+      inset: 0;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F4FBF9;
+      color: #123F3A;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    #loading.hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe
+    id="pukiFrame"
+    src="https://script.google.com/macros/s/AKfycbxyoLCKz8wcOwObD9C677yezP-_yWr6n0K71ahlC_1tfLP5zqImP-Qj49HuPqDn-bX9tA/exec"
+    allow="clipboard-read; clipboard-write"
+    onload="document.getElementById('loading').classList.add('hidden')">
+  </iframe>
+
+  <div id="loading">PUKI-OS Life 🦦</div>
+</body>
+</html>
