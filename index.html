@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- =====================================================
+       PUKI-OS V6 OFFICIAL
+       GitHub Pages wrapper
+       ===================================================== -->
+
+  <meta
+    name="viewport"
+    content="width=device-width,
+             initial-scale=1,
+             maximum-scale=1,
+             user-scalable=no,
+             viewport-fit=cover"
+  >
+
+  <!-- Browser / PWA colors -->
+  <meta name="theme-color" content="#132A26">
+
+  <!-- iPhone / iPad Home Screen -->
+  <meta
+    name="apple-mobile-web-app-capable"
+    content="yes"
+  >
+
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="default"
+  >
+
+  <meta
+    name="apple-mobile-web-app-title"
+    content="PUKI-OS"
+  >
+
+  <!-- =====================================================
+       APP ICONS
+       File nằm cùng thư mục với index.html trên GitHub
+       ===================================================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="512x512"
+    href="./puki_os_icon_512.png?v=611"
+  >
+
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="./puki_os_icon_512.png?v=611"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="./puki_os_icon_512.png?v=611"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./puki_os_icon_512.png?v=611"
+  >
+
+  <link
+    rel="apple-touch-icon-precomposed"
+    href="./puki_os_icon_512.png?v=611"
+  >
+
+  <title>PUKI-OS V6</title>
+
+  <style>
+    :root {
+      --puki-bg: #F8FAFC;
+      --puki-spruce: #132A26;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+
+      overflow: hidden;
+
+      background: var(--puki-bg);
+
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      position: fixed;
+      inset: 0;
+    }
+
+    #pukiApp {
+      position: fixed;
+      inset: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+
+      margin: 0;
+      padding: 0;
+
+      border: 0;
+
+      background: var(--puki-bg);
+    }
+
+    /* Fallback nếu iframe đang tải */
+    .loading-screen {
+      position: fixed;
+      inset: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      z-index: -1;
+
+      background: var(--puki-bg);
+      color: var(--puki-spruce);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      font-size: 14px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loading-screen">
+    Đang mở PUKI-OS...
+  </div>
+
+  <iframe
+    id="pukiApp"
+    src="https://script.google.com/macros/s/AKfycbxob_ZLR1ZZBE5-TWioVDpgPcNrRotbpd7sMGWOs5nCEGkUHunBMiB-58HBE4qQw8GWaA/exec?v=v6-official-611"
+    title="PUKI-OS V6 Clinical Resident OS"
+    allow="clipboard-read; clipboard-write"
+  ></iframe>
+
+</body>
+</html>
